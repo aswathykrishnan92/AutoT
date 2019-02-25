@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190225 14:52:26.296" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\Aswathy\PycharmProjects\AutoT\windowtest.robot" id="s1" name="Windowtest">
+<test id="s1-t1" name="Notepad">
+<kw name="Run_program">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>C:\\Program Files\\OpenAPC\\OpenEditor.exe</arg>
+</arguments>
+<msg timestamp="20190225 14:52:26.444" level="INFO">AutoItLibrary.Run(FileName='C:\Program Files\OpenAPC\OpenEditor.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" endtime="20190225 14:52:26.444" starttime="20190225 14:52:26.428"></status>
+</kw>
+<status status="PASS" endtime="20190225 14:52:26.444" starttime="20190225 14:52:26.428"></status>
+</kw>
+<kw name="Wait_Till_Window_Active_for_text ${Window_title} ${window_text}">
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>${screentext}</arg>
+</arguments>
+<msg timestamp="20190225 14:52:27.658" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='License Error', WindowText='No', TimeOut=60)</msg>
+<status status="PASS" endtime="20190225 14:52:27.658" starttime="20190225 14:52:26.444"></status>
+</kw>
+<status status="PASS" endtime="20190225 14:52:27.658" starttime="20190225 14:52:26.444"></status>
+</kw>
+<kw name="SEND_TEXT !n">
+<kw name="Send" library="AutoItLibrary">
+<doc>method Send</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" endtime="20190225 14:52:27.702" starttime="20190225 14:52:27.661"></status>
+</kw>
+<status status="PASS" endtime="20190225 14:52:27.702" starttime="20190225 14:52:27.658"></status>
+</kw>
+<kw name="CLICK_CONTROL ${Window_title2} ${EMPTY} ${id} ${EMPTY}">
+<kw name="Control Click" library="AutoItLibrary">
+<doc>method ControlClick</doc>
+<arguments>
+<arg>${Window_title} ${window_text} ${id}</arg>
+</arguments>
+<msg timestamp="20190225 14:52:27.709" level="FAIL">com_error: (-2147352561, 'Parameter not optional.', None, None)</msg>
+<status status="FAIL" endtime="20190225 14:52:27.709" starttime="20190225 14:52:27.702"></status>
+</kw>
+<status status="FAIL" endtime="20190225 14:52:27.709" starttime="20190225 14:52:27.702"></status>
+</kw>
+<status status="FAIL" endtime="20190225 14:52:27.713" critical="yes" starttime="20190225 14:52:26.428">com_error: (-2147352561, 'Parameter not optional.', None, None)</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" endtime="20190225 14:52:27.713" starttime="20190225 14:52:26.296"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Windowtest" pass="0">Windowtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
